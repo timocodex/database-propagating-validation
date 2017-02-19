@@ -26,7 +26,8 @@ var eventSchema = new Schema({
       },
       message: 'email format is wrong'
     },
-    required:[true,'email is required']
+    required:[true,'email is required'],
+    unique:true
   }
 });
 

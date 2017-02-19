@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/public/css/materialize.min.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+
+  <div class="row">
+    <h3>Event Form:</h3>
+    <input id="idUpdate" type="hidden">
+
+    <form class="col s12">
+      <div class="row">
+      <div class="input-field col s12">
+        <input id="newTitle" name="newTitle" type="text" class="validate">
+        <label class="active" for="newTitle">insert the title</label>
+      </div>
+      <div class="input-field col s12">
+        <label class="active" for="newDate">insert the Date</label>
+        <input id="newDate" name="newDate" type="date" class="validate">
+      </div>
+      <div class="input-field col s12">
+        <input id="newName" name="newName" type="text" class="validate">
+        <label class="active" for="newName">insert the Name of Organizer</label>
+      </div>
+      <div class="input-field col s12">
+        <input id="newEmail" name="newEmail" type="email" class="validate">
+        <label class="active" for="newEmail">insert the Email of Organizer</label>
+      </div>
+    </div>
+    </form>
+    <a class="waves-effect waves-light btn" name="newtod" onclick="createNew()">submit</a>
+  </div>
+
+  <div class="row">
+    <h3>list of Events: </h3>
+    <div id="todos" class="row">
+      <table>
+        <thead>
+          <tr>
+              <th data-field="id">Title</th>
+              <th data-field="name">Date</th>
+              <th data-field="price">Name</th>
+              <th data-field="price">Email</th>
+          </tr>
+        </thead>
+
+        <tbody id="tabelEvent">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+<script type="text/javascript" src="/public/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/public/js/materialize.min.js"></script>
+<script type="text/javascript" src="/public/js/ajax.js"></script>
+</html>
